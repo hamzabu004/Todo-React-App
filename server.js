@@ -41,4 +41,4 @@ app.put("/todo/complete/:id", async (req, res) => {
     res.json(todo)
 })
 
-app.listen(3001 || process.env.PORT )
+app.listen( process.env.PORT || 3001 )
